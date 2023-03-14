@@ -1,0 +1,155 @@
+:root {
+    --grey: hsl(219, 9%, 45%);
+    --light: hsl(0, 0%, 75%);
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    --lightish: hsl(223, 64%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Kumbh Sans, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-bottom: 0.01rem solid var(--light);
+}
+
+.nav-div-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: inline;
+    height: 1.5rem;
+    margin-right: 2.5rem;
+}
+
+ul {
+    display: inline;   
+}
+
+.links {
+    display: inline;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.links-a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.links-a:hover {
+    color: black;
+    padding-bottom: 1.65rem;
+    border-bottom: 0.25rem solid var(--orange);
+}
+
+.nav-div-right {
+    display: flex;
+    align-items: center;
+    margin-left: 30rem;
+}
+
+.cart {
+    cursor: pointer;
+}
+
+.user {
+    width: 2.5rem;
+    margin-left: 2.5rem;
+    border: 0.15rem solid transparent;
+    border-radius: 50%;
+}
+
+.user:hover {
+    cursor: pointer;
+    border-color: var(--orange);
+}
+
+.display-cart-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.none {
+    display: none;
+}
+
+.display {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 18rem;
+    height: 12rem;
+    margin-top: 0;
+    margin-left: 64rem;
+    box-shadow: 0rem 1rem 20px rgb(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+}
+
+.men {
+    margin: 0.8rem 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 0.01rem solid var(--light);
+}
+
+.oboi {
+    margin: 0.8rem 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 0.01rem solid var(--light);
+}
+
+.cart-items-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.cart-item-image-wrap {
+    height: 3rem;
+    width: 3rem;
+}
+
+.cart-item-image-wrap img {
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+.cart-item-description {
+    margin-left: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.checkout-div {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.checkout {
+    display: inline;
+    color: white;
+    background-color: var(--orange);
+    padding: 0.7rem 6rem;
+    border-radius: 0.5rem;
+}
+
+.hidden {
+    margin-top: 2rem;
+}

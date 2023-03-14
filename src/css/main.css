@@ -1,0 +1,130 @@
+.main-style {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.product-image {
+    width: 25rem;
+    border-radius: 1rem;
+}
+
+.product-thumbnail-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 25rem;
+    margin-top: 2rem;
+}
+
+.product-thumbnail {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+.product-thumbnail-image {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.description-section-style {
+    max-width: 28rem;
+    margin-left: 7rem;
+    margin-top: 3rem;
+}
+
+.h5 {
+    color: var(--orange);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+article {
+    color: var(--grey);
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.price {
+    width: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.price h2 {
+    margin-right: 1rem;
+}
+.percent {
+    color: var(--orange);
+    background-color: var(--pale-orange);
+    padding: 0.05rem 0.4rem;
+    border-radius: 0.3rem;
+}
+
+.linethrough {
+    margin-top: 0.5rem;
+    text-decoration: line-through;
+    color: var(--light);
+}
+
+.footer {
+    display: flex;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+.increment-div {
+    background-color: var(--lightish);
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+.minus {
+    height: 0.3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    cursor: pointer;
+}
+
+.increment {
+    cursor: pointer;
+    display: inline;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.increment-div div {
+    display: flex;
+}
+
+.increment-value {
+    padding: 0 1rem;
+    display: inline;
+    text-align: center;
+    width: 1rem;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    background-color: var(--orange);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0 4rem;
+}
+
+.add img {
+    height: 1rem;
+    margin-right: 1rem;
+}
+
+.light:hover {
+    cursor: pointer;
+    filter: opacity(0.6);
+    /*border: 0.2rem solid var(--orange);*/
+}
