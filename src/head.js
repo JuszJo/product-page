@@ -11,13 +11,13 @@ import user from './images/image-avatar.png'
 import product1thumb from './images/image-product-1-thumbnail.jpg'
 
 const Head = (props) => {
-    var box = useRef(null)
-    var box2 = useRef(null)
+    const box = useRef(null)
+    const box2 = useRef(null)
 
     function displayCart() {
         box2.current.classList.toggle('display')
 
-        if(props.val > 0) {
+        if(props.itemAmount > 0) {
             box2.current.classList.remove('display')
             box.current.classList.toggle('display')
         }
@@ -49,12 +49,12 @@ const Head = (props) => {
         <section>
             <div className='display-cart-wrap'>
                 <div className='none' ref={box2}>
-                        <h4 className='men'>Cart</h4>
-                        <div className='cart-items-section'>
-                            <div className='cart-item-description'>
-                                <h4 className='hidden'>Your Cart Is Empty</h4>
-                            </div>
+                    <h4 className='men'>Cart</h4>
+                    <div className='cart-items-section'>
+                        <div className='cart-item-description'>
+                            <h4 className='hidden'>Your Cart Is Empty</h4>
                         </div>
+                    </div>
                 </div>
                 <div className='none' ref={box}>
                     <h4 className='oboi'>Cart</h4>
@@ -64,7 +64,7 @@ const Head = (props) => {
                         </div>
                         <div className='cart-item-description'>
                             <p>Fall Limited Edition Sneakers</p>
-                            <p>$125.00 x {props.val} = <strong>${props.val2}</strong></p>
+                            <p>$125.00 x {props.itemAmount} = <strong>${props.finalPrice}</strong></p>
                         </div>
                     </div>
                     <div className='checkout-div'>

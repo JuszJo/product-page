@@ -23,18 +23,17 @@ import product4thumb from './images/image-product-4-thumbnail.jpg'
 import Head from './head'
 
 const Main = (props) => {
-    var value = useRef(null)
-
-    var mainImage = useRef(null)
+    let value = useRef(null)
+    let mainImage = useRef(null)
 
     function add() {
-        var num = parseInt(value.current.innerHTML)
+        let num = parseInt(value.current.innerHTML)
         num += 1
         value.current.innerHTML = num.toString()   
     }
 
     function subtract() {
-        var num = parseInt(value.current.innerHTML)
+        let num = parseInt(value.current.innerHTML)
         if(num > 0) {
             num -= 1
             value.current.innerHTML = num.toString()
@@ -43,7 +42,7 @@ const Main = (props) => {
     
     function addCart() {
         if(parseInt(value.current.innerHTML) > 0) {
-            props.val((parseInt(value.current.innerHTML)), (125 * (parseInt(value.current.innerHTML))))
+            props.setGlobalStates((parseInt(value.current.innerHTML)), (125 * (parseInt(value.current.innerHTML))))
         }
     }
 
