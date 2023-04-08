@@ -1,13 +1,9 @@
-import { useRef, useState } from 'react'
-
+import { useRef } from 'react'
 import './css/head.css'
 
 import logo from './images/logo.svg'
-
 import cart from './images/icon-cart.svg'
-
 import user from './images/image-avatar.png'
-
 import product1thumb from './images/image-product-1-thumbnail.jpg'
 
 const Head = (props) => {
@@ -39,8 +35,8 @@ const Head = (props) => {
                         </ul>
                     </div>
                     <div className='nav-div-right'>
-                        <img src={cart}  onClick={displayCart} href="Cart" className='cart' />
-                        <img src={user} href="User Profile Picture" className='user' />
+                        <img src={cart} alt="cart"  onClick={displayCart} href="Cart" className='cart' />
+                        <img src={user} alt="user profile" className='user' />
                     </div>
 
                 </div>
@@ -60,7 +56,7 @@ const Head = (props) => {
                     <h4 className='oboi'>Cart</h4>
                     <div className='cart-items-section'>
                         <div className='cart-item-image-wrap'>
-                            <img src={product1thumb} />
+                            <img alt='product thumbnail' src={product1thumb} />
                         </div>
                         <div className='cart-item-description'>
                             <p>Fall Limited Edition Sneakers</p>

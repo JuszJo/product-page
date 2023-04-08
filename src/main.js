@@ -1,11 +1,8 @@
 import { useRef } from 'react'
-
 import './css/main.css'
 
 import cart from './images/icon-cart.svg'
-
 import minus from './images/icon-minus.svg'
-
 import plus from './images/icon-plus.svg'
 
 import product1 from './images/image-product-1.jpg'
@@ -19,8 +16,6 @@ import product3thumb from './images/image-product-3-thumbnail.jpg'
 
 import product4 from './images/image-product-4.jpg'
 import product4thumb from './images/image-product-4-thumbnail.jpg'
-
-import Head from './head'
 
 const Main = (props) => {
     let value = useRef(null)
@@ -46,7 +41,7 @@ const Main = (props) => {
         }
     }
 
-    function pic(e) {
+    function changePicture(e) {
         var key = e.target.alt
 
         switch (key) {
@@ -81,19 +76,19 @@ const Main = (props) => {
             <div className='main-style'>
                 <section className="image-section">
                     <div className="image-section-style">
-                        <img src={product1} ref={mainImage} href="Shoe" className="product-image" />
+                        <img src={product1} ref={mainImage} alt="Shoe" className="product-image" />
                         <div className="product-thumbnail-section">
                             <div className="product-thumbnail light">
-                                <img src={product1thumb} onClick={pic} alt="Product Thumbnail1" className='product-thumbnail-image' />
+                                <img src={product1thumb} onClick={changePicture} alt="Product Thumbnail1" className='product-thumbnail-image' />
                             </div>
                             <div className="product-thumbnail light">
-                                <img src={product2thumb} onClick={pic} alt="Product Thumbnail2" className='product-thumbnail-image' />
+                                <img src={product2thumb} onClick={changePicture} alt="Product Thumbnail2" className='product-thumbnail-image' />
                             </div>
                             <div className="product-thumbnail light">
-                                <img src={product3thumb} onClick={pic} alt="Product Thumbnail3" className='product-thumbnail-image' />
+                                <img src={product3thumb} onClick={changePicture} alt="Product Thumbnail3" className='product-thumbnail-image' />
                             </div>
                             <div className="product-thumbnail light">
-                                <img src={product4thumb} onClick={pic} alt="Product Thumbnail4" className='product-thumbnail-image' />
+                                <img src={product4thumb} onClick={changePicture} alt="Product Thumbnail4" className='product-thumbnail-image' />
                             </div>
                         </div>
                     </div>
@@ -113,14 +108,14 @@ const Main = (props) => {
                         </div>
                         <div className='footer'>
                             <div className='increment-div'>
-                                <img src={minus} onClick={subtract} className='minus' />
+                                <img alt='minus-sign' src={minus} onClick={subtract} className='minus' />
                                 <div>
                                     <h4 ref={value} className='increment-value'>0</h4>
                                 </div>
-                                <img src={plus} onClick={add} className='increment' />    
+                                <img alt='plus-sign' src={plus} onClick={add} className='increment' />    
                             </div>
                             <div className='add light' onClick={addCart} >
-                                <img src={cart} />
+                                <img alt='cart-sign' src={cart} />
                                 <h4>Add to Cart</h4>
                             </div>
                         </div>
