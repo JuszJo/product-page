@@ -1,10 +1,10 @@
-import { useRef, useState } from 'react'
-import './css/head.css'
+import { useState } from 'react';
+import './css/head.css';
 
-import logo from './images/logo.svg'
-import cart from './images/icon-cart.svg'
-import user from './images/image-avatar.png'
-import product1thumb from './images/image-product-1-thumbnail.jpg'
+import logo from './images/logo.svg';
+import cart from './images/icon-cart.svg';
+import user from './images/image-avatar.png';
+import product1thumb from './images/image-product-1-thumbnail.jpg';
 
 const Cart = props => {
     const [isEmpty, setIsEmpty] = useState(true)
@@ -79,4 +79,4 @@ const Head = ({itemAmount, finalPrice}) => {
     )
 }
 
-export default Head
+export default Head;
